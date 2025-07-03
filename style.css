@@ -1,16 +1,16 @@
-/* style.css for Secure Planning */
+/* Light and Elegant style.css for Secure Planning */
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #0a0f1e;
-  color: #ffffff;
+  background-color: #fefefe;
+  color: #333;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  color: #ffffff;
+  color: #1a1a1a;
   margin-bottom: 0.5em;
 }
 
@@ -22,15 +22,16 @@ h1, h2, h3 {
 }
 
 .navbar {
-  background-color: #0a0f1e;
-  padding: 1em 0;
-  border-bottom: 1px solid #222;
+  background-color: #ffffff;
+  padding: 1.2em 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #f5c342;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #c49102;
   float: left;
 }
 
@@ -47,58 +48,61 @@ nav {
 }
 
 .nav-links a {
-  color: #f5c342;
+  color: #c49102;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .hero {
-  padding: 5em 0;
+  padding: 6em 0;
   text-align: center;
+  background-image: url('https://source.unsplash.com/1600x800/?luxury,finance,family');
   background-size: cover;
   background-position: center;
   color: #ffffff;
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   margin-bottom: 0.5em;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .hero p {
-  font-size: 1.25em;
+  font-size: 1.3em;
   margin-bottom: 1.5em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn-primary {
-  background-color: #f5c342;
-  color: #0a0f1e;
+  background-color: #c49102;
+  color: #fff;
   padding: 0.75em 2em;
   text-decoration: none;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #e6b937;
+  background-color: #a37700;
 }
 
 .section {
   padding: 4em 0;
-  background-color: #11182b;
-  color: #ddd;
+  background-color: #fafafa;
+  color: #444;
 }
 
 .section:nth-of-type(even) {
-  background-color: #0a0f1e;
+  background-color: #ffffff;
 }
 
 .grid {
@@ -108,37 +112,4 @@ nav {
   margin-top: 2em;
 }
 
-.card {
-  background-color: #1a2238;
-  padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 1em;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  font-family: 'Inter', sans-serif;
-}
-
-.footer {
-  background-color: #0a0f1e;
-  text-align: center;
-  padding: 2em 0;
-  color: #777;
-  font-size: 0.9em;
-}
+.
