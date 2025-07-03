@@ -1,178 +1,142 @@
-/* General resets and fonts */
+/* style.css */
+
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #222;
-  background-color: #ffffff;
-  line-height: 1.6;
-}
-
-/* Typography */
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  background-color: #f9fbfc;
   color: #1a1a1a;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation */
 .navbar {
-  background-color: #f7f7f7;
-  padding: 20px 40px;
+  background-color: #ffffff;
+  padding: 24px 60px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #333;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-links a {
-  color: #444;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  text-decoration: none;
+  color: #1e2a38;
+  font-weight: 600;
 }
 
-.nav-links a:hover {
-  color: #0077cc;
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #003366;
 }
 
-/* Hero Section */
 .hero {
-  background: url('https://source.unsplash.com/1600x600/?finance,planning') center/cover no-repeat;
-  color: white;
-  text-align: center;
+  background-image: url('https://source.unsplash.com/1600x800/?financial,planning');
+  background-size: cover;
+  background-position: center;
   padding: 120px 20px;
+  text-align: center;
+  color: white;
 }
 
 .hero h1 {
-  font-size: 3.2rem;
-  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
+  font-size: 22px;
+  max-width: 850px;
   margin: auto;
-  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 34px;
   background-color: #0077cc;
-  color: #fff;
-  padding: 12px 28px;
+  color: white;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-size: 18px;
   text-decoration: none;
-  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #005fa3;
 }
 
-/* Sections */
 .section {
-  padding: 60px 20px;
+  padding: 90px 30px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #003366;
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Grid Layout */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-/* Cards */
 .card {
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
 }
 
-.card h3 {
-  margin-top: 0;
-  color: #0077cc;
-}
-
-/* Image Banner */
 .img-banner {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
 }
 
-/* Team Photo */
 .team-photo {
   display: block;
-  margin: 0 auto 20px auto;
-  max-width: 180px;
+  max-width: 240px;
+  margin: 40px auto 20px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form */
 .contact-form {
-  max-width: 700px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  max-width: 650px;
+  margin: auto;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 14px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
+  padding: 16px;
+  border: 1px solid #ccd6dd;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
-/* Footer */
 .footer {
-  background: #f0f0f0;
+  background-color: #dde9f4;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-  .section-title {
-    font-size: 2rem;
-  }
-  .btn-primary {
-    padding: 10px 20px;
-  }
+  padding: 40px 20px;
+  font-size: 15px;
 }
