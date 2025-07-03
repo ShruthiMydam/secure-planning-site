@@ -25,7 +25,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #cb4b16;
+  color: #f57c00; /* highlight orange */
   font-weight: 600;
   transition: color 0.3s;
 }
@@ -38,11 +38,11 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: bold;
-  color: #cb4b16;
+  color: #f57c00;
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 43, 54, 0.85), rgba(0, 43, 54, 0.85)), url('https://source.unsplash.com/1600x800/?finance,coast');
+  background-image: linear-gradient(rgba(0, 43, 54, 0.85), rgba(0, 43, 54, 0.85)), url('https://source.unsplash.com/1600x800/?finance,tropical');
   background-size: cover;
   background-position: center;
   padding: 140px 20px;
@@ -67,7 +67,7 @@ body {
   display: inline-block;
   margin-top: 40px;
   padding: 16px 36px;
-  background-color: #cb4b16;
+  background-color: #f57c00;
   color: #002b36;
   border: none;
   border-radius: 8px;
@@ -77,12 +77,12 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #b3370d;
+  background-color: #cf6100;
 }
 
 .section {
   padding: 100px 30px;
-  background-color: #003d4c;
+  background-color: #014250;
 }
 
 .container {
@@ -94,7 +94,7 @@ body {
   text-align: center;
   font-size: 40px;
   margin-bottom: 60px;
-  color: #cb4b16;
+  color: #f57c00;
 }
 
 .grid {
