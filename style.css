@@ -1,9 +1,9 @@
-/* Light and Elegant style.css for Secure Planning */
+/* Updated Modern & Light Theme for Secure Planning */
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #fefefe;
+  background-color: #ffffff;
   color: #333;
   line-height: 1.6;
 }
@@ -23,9 +23,9 @@ h1, h2, h3 {
 
 .navbar {
   background-color: #ffffff;
-  padding: 1.2em 0;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5em 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
 .logo {
@@ -61,7 +61,7 @@ nav {
 .hero {
   padding: 6em 0;
   text-align: center;
-  background-image: url('https://source.unsplash.com/1600x800/?luxury,finance,family');
+  background-image: url('DP.jpeg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -107,9 +107,98 @@ nav {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2em;
   margin-top: 2em;
 }
 
-.
+.card {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.card video {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 2em 0;
+  color: #777;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Image Banner */
+.img-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 2em 0;
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1em auto;
+}
+
+.video-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+
+/* Team Label */
+.team-title {
+  text-align: center;
+  margin-top: 0.5em;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #333;
+}
