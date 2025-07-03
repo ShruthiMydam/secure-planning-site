@@ -7,6 +7,128 @@
   <title>Secure Planning LLC</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8;
+      color: #1e2a38;
+    }
+    .navbar {
+      background-color: #ffffff;
+      padding: 24px 60px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #1e2a38;
+      font-weight: 600;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: bold;
+      color: #003366;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x800/?wealth,family');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 24px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+    .hero p {
+      font-size: 22px;
+      max-width: 850px;
+      margin: auto;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    .btn-primary {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 16px 34px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #005fa3;
+    }
+    .section {
+      padding: 90px 30px;
+    }
+    .container {
+      max-width: 1240px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 50px;
+      color: #003366;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+    .img-banner {
+      width: 100%;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+    .team-photo {
+      display: block;
+      max-width: 240px;
+      margin: 40px auto 20px;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 650px;
+      margin: auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 16px;
+      border: 1px solid #ccd6dd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .footer {
+      background-color: #dde9f4;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 15px;
+    }
+  </style>
 </head>
 <body>
   <header class="navbar container">
@@ -23,15 +145,15 @@
   </header>
 
   <section class="hero">
-    <h1>Secure Your Future with Confidence</h1>
-    <p>Personalized retirement and financial planning with clarity, care, and expert guidance.</p>
-    <a class="btn-primary" href="#about">Get Started Today</a>
+    <h1>Future-Focused Wealth Design</h1>
+    <p>Fusing timeless financial strategies with forward-looking insights and innovation.</p>
+    <a class="btn-primary" href="#about">Plan With Vision</a>
   </section>
 
   <section id="about" class="section container">
     <h2 class="section-title">About Us</h2>
-    <p>At Secure Planning LLC, we believe in putting your future first. Our mission is to remove the complexity of wealth planning and replace it with clarity and confidence. Whether you are preparing for retirement, planning your estate, or navigating investments, we’re here with solutions that are as unique as your goals.</p>
-    <img src="https://source.unsplash.com/1400x500/?business,teamwork" alt="Our Philosophy" class="img-banner">
+    <p style="text-align: center; font-size: 18px; max-width: 920px; margin: auto;">We simplify the complexity of financial planning with personalized strategies tailored to your future. Whether you're investing for the first time or planning retirement, our transparent advice helps you reach your goals.</p>
+    <img src="https://source.unsplash.com/1400x600/?financial,goals" alt="About Us Image" class="img-banner">
   </section>
 
   <section id="services" class="section container">
@@ -39,31 +161,31 @@
     <div class="grid">
       <div class="card">
         <h3>Wealth Management</h3>
-        <p>Comprehensive strategies to manage and grow your assets while aligning with your goals.</p>
+        <p>Comprehensive strategies to grow, protect, and transfer your assets wisely.</p>
       </div>
       <div class="card">
         <h3>Retirement Planning</h3>
-        <p>Designing financial roadmaps that guide you to a secure and enjoyable retirement.</p>
+        <p>Design your financial milestones for a secure and enjoyable retirement.</p>
       </div>
       <div class="card">
         <h3>Insurance & Risk Planning</h3>
-        <p>Protect your wealth with tailored life, health, and long-term care insurance solutions.</p>
+        <p>Protect what you value most with health, liability, and long-term care solutions.</p>
       </div>
       <div class="card">
-        <h3>Estate & Tax Strategies</h3>
-        <p>Minimize your tax burden and preserve your legacy with careful estate planning.</p>
+        <h3>Estate & Tax Strategy</h3>
+        <p>Minimize your tax burden and create enduring legacy plans.</p>
       </div>
     </div>
   </section>
 
   <section id="team" class="section container">
-    <h2 class="section-title">Meet Shelly Thompson</h2>
+    <h2 class="section-title">Meet the Team</h2>
     <img src="DP.jpeg" alt="Shelly Thompson" class="team-photo">
-    <p style="text-align: center; max-width: 700px; margin: auto;">With a deep commitment to integrity and personal attention, Shelly brings more than two decades of financial planning experience. She believes in empowering clients through education and thoughtful strategy.</p>
+    <p style="text-align: center; max-width: 800px; margin: auto;">Shelly Thompson brings decades of insight, empathy, and experience to Secure Planning. Her commitment to personal relationships ensures each financial plan is meaningful and actionable.</p>
   </section>
 
   <section id="blogs" class="section container">
-    <h2 class="section-title">Recent Blog Posts</h2>
+    <h2 class="section-title">Latest Insights</h2>
     <div class="grid">
       <div class="card">
         <h3>Understanding Economic Shifts</h3>
@@ -71,11 +193,11 @@
       </div>
       <div class="card">
         <h3>Market Volatility & You</h3>
-        <p>Insights into what causes market shifts and how to plan through uncertain times.</p>
+        <p>Explore current trends influencing inflation, rates, and long-term portfolio strategy.</p>
       </div>
       <div class="card">
         <h3>Maximize Your Retirement</h3>
-        <p>Top ways to ensure your retirement income supports your lifestyle and goals.</p>
+        <p>Top ways to secure and reinvent income support as your lifestyle needs adjust.</p>
       </div>
     </div>
   </section>
